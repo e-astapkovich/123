@@ -4,4 +4,4 @@
 - scss
 - БЭМ
 
-[https://www.figma.com/file/MEKCmlgypP6jUGlObpzLGG/Medical](Используемый макет)
+[Используемый макет](https://www.figma.com/file/MEKCmlgypP6jUGlObpzLGG/Medical)
