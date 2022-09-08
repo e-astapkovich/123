@@ -1,0 +1,31 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    background: var(--color-main);
+    height: 40px;
+
+    &_content {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &_svg {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  &_email {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
