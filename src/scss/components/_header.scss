@@ -35,7 +35,7 @@
     align-items: center;
     background: #fff;
     height: 119px;
-
+    position: relative;
   }
 
   &__logo {
@@ -45,16 +45,22 @@
 }
 
 .header-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 
   &__list {
-    display: flex;
+    display: inline-flex;
+    margin-left: -11px;
   }
 
   &__item {
     text-transform: uppercase;
+    line-height: 16px;
 
     &:not(:last-child) {
       margin-right: 20px;
@@ -66,9 +72,51 @@
   }
 }
 
-.header-phone {
+.header-contacts {
+
   &__link {
     display: flex;
     flex-direction: column;
+    padding-left: 35px;
+    padding-bottom: 4px;
+
+    &_phone {
+
+      background: url(../img/phone-1.svg);
+      background-size: 23px 33px;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
   }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey);
+    text-transform: capitalize;
+  }
+
+  &__value {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+  }
+}
+
+.wrapper {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.inner {
+  display: inline-block;
+}
+
+.test-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
