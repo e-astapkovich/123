@@ -196,7 +196,7 @@ const watchFiles = () => {
 
   watch(paths.srcScss, styles);
   watch(`${srcFolder}/**/*.html`, htmlInclude);
-  watch(`${paths.srcImgFolder}/**/*.{ jpg, jpeg, png }`, imgToApp);
+  watch(`${paths.srcImgFolder}/**/*.{jpg, jpeg, png}`, imgToApp);
   watch(`${paths.srcImgFolder}/**/*.svg`, svgToApp);
   watch(paths.srcSvg, svgToSprite);
   watch(`${paths.srcFontsFolder}/*.ttf`, fontsConvert);
