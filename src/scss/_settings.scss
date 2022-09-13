@@ -25,6 +25,7 @@ ul {
 img {
 	max-width: 100%;
 }
+
 /**
 Базовый сброс стилей
 Конец
@@ -33,4 +34,21 @@ img {
 body {
 	font-family: 'Asap', sans-serif;
 	margin: 0;
+}
+
+.btn {
+	width: 104px;
+	height: 35px;
+	background-color: var(--color-red);
+	border: none;
+	border-radius: 0px;
+	border-color: var(--color-red);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 35px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
