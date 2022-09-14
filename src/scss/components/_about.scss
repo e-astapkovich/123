@@ -1,0 +1,12 @@
+.about {
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    width: 770px;
+  }
+
+  &__right {
+    width: 350px;
+  }
+}
