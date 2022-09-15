@@ -1,6 +1,11 @@
 .about {
   display: flex;
   justify-content: space-between;
+  padding-top: 85px;
+
+  &__title {
+    margin-bottom: 57px;
+  }
 
   &__left {
     width: 770px;
@@ -8,5 +13,46 @@
 
   &__right {
     width: 350px;
+  }
+
+  &__img {
+    margin-bottom: 35px;
+  }
+
+  &__reason {
+    width: 350px;
+    height: 240px;
+    padding: 45px 35px 0;
+    background: #f7f7f7;
+
+    // TODO почему один блок другого цвета? Ховер? Но зачем весь блок?..
+    &_dark {
+      background: #f3f3f3;
+    }
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 29px;
+    color: var(--color-grey);
+    text-transform: uppercase;
+
+    &:hover {
+      // border-bottom: 1px solid currentColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+.reason {
+  &__title {
+      margin-bottom: 16px;
+  }
+
+  &__description {
+    line-height: 25px;
+    margin-bottom: 11px;
   }
 }
