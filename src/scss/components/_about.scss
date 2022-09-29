@@ -7,6 +7,15 @@
     margin-bottom: 57px;
   }
 
+  &__description {
+    margin: 0;
+    line-height: 29px;
+  }
+
+  &__description:not(:last-child) {
+    margin-bottom: 49px;
+  }
+
   &__left {
     width: 770px;
   }
