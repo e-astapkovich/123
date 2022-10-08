@@ -37,6 +37,12 @@ body {
 	background: #F2F2F2;
 }
 
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-paddind);
+}
+
 .btn {
 	width: 104px;
 	height: 35px;
