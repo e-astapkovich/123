@@ -1,5 +1,46 @@
 .benefits {
-  --container-roadside: calc((100vw-)/2);
+  // --container-roadside: calc((100vw - 20vw) / 2);
+  // --container-roadside: 20px;
+  --container-roadside: calc((100vw - var(--container-width)) / 2);
   --content-width: 474px;
   --content-margin: 66px;
+
+  display: flex;
+  position: relative;
+  min-height: 504px;
+  overflow: hidden;
+
+  background-color: skyblue;
+
+  &__buttons-box {
+    position: absolute;
+    width: calc( 100vw - var(--container-roadside) - var(--content-width) - var(--content-margin) - var(--container-padding) );
+    height: 100%;
+    background-image: url(../img/benefits-bg.jpg);
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #ccc;
+  }
+
+  &__content {
+    flex: 0 0 100%;
+
+    background-color: darkseagreen;
+    height: 290px;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__content-box {
+    width: var(--content-width);
+    border: 1px solid #000;
+  }
+
+  &__item {
+    list-style-type: disc;
+  }
 }
