@@ -10,8 +10,6 @@
   min-height: 504px;
   overflow: hidden;
 
-  background-color: skyblue;
-
   &__buttons-box {
     position: absolute;
     width: calc( 100vw - var(--container-roadside) - var(--content-width) - var(--content-margin) - var(--container-padding) );
@@ -25,9 +23,6 @@
 
   &__content {
     flex: 0 0 100%;
-
-    background-color: darkseagreen;
-    height: 290px;
   }
 
   &-container {
@@ -37,7 +32,19 @@
 
   &__content-box {
     width: var(--content-width);
-    border: 1px solid #000;
+    padding-top: 77px;
+  }
+
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__description {
+    padding: 36px 12px 49px 7px;
+  }
+
+  &__list {
+    margin: 0;
   }
 
   &__item {
