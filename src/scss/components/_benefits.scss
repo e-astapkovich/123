@@ -2,8 +2,8 @@
   // --container-roadside: calc((100vw - 20vw) / 2);
   // --container-roadside: 20px;
   --container-roadside: calc((100vw - var(--container-width)) / 2);
-  --content-width: 474px;
-  --content-margin: 66px;
+  --content-width: 475px;
+  --content-margin: 74px;
 
   display: flex;
   position: relative;
@@ -40,7 +40,7 @@
   }
 
   &__description {
-    padding: 36px 12px 49px 7px;
+    padding: 37px 12px 48px 5px;
   }
 
   &__list {
