@@ -43,21 +43,27 @@ body {
 	padding: 0 var(--container-padding);
 }
 
+.btn-reset {
+	border: none;
+	border-radius: 0px;
+	margin: 0;
+	padding: 0;
+}
+
 .btn {
 	width: 104px;
 	height: 35px;
-	background-color: var(--color-red);
-	border: none;
-	border-radius: 0px;
-	border-color: var(--color-red);
-	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 35px;
 	text-align: center;
-	margin: 0;
-	padding: 0;
+}
+
+.btn-colored {
+	background-color: var(--color-red);
+	border-color: var(--color-red);
+	color: #fff;
 }
 
 .title {
