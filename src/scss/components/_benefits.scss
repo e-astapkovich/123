@@ -1,10 +1,4 @@
 .benefits {
-  // --container-roadside: calc((100vw - 20vw) / 2);
-  // --container-roadside: 20px;
-  --container-roadside: calc((100vw - var(--container-width)) / 2);
-  --content-width: 475px;
-  --content-margin: 74px;
-
   display: flex;
   position: relative;
   min-height: 504px;
@@ -16,7 +10,7 @@
     justify-content: center;
     align-items: flex-end;
     position: absolute;
-    width: calc(100vw - var(--container-roadside) - var(--content-width) - var(--content-margin) - var(--container-padding));
+    width: calc(100vw - var(--container-roadside) - var(--right-column-width) - var(--column-margin) - var(--container-padding));
     height: 100%;
     background-image: url(../img/benefits-bg.jpg);
     background-position: 0 0;
@@ -59,7 +53,7 @@
   }
 
   &__content-box {
-    width: var(--content-width);
+    width: var(--right-column-width);
     padding-top: 77px;
   }
 

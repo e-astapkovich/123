@@ -6,4 +6,7 @@ body {
   --color-grey: #7d7d7d;
   --container-width: 1200px;
   --container-padding: 15px;
+  --right-column-width: 475px;
+  --column-margin: 74px;
+  --container-roadside: calc((100vw - var(--container-width)) / 2);
 }
