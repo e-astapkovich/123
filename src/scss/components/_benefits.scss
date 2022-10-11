@@ -11,14 +11,42 @@
   overflow: hidden;
 
   &__buttons-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: absolute;
-    width: calc( 100vw - var(--container-roadside) - var(--content-width) - var(--content-margin) - var(--container-padding) );
+    width: calc(100vw - var(--container-roadside) - var(--content-width) - var(--content-margin) - var(--container-padding));
     height: 100%;
     background-image: url(../img/benefits-bg.jpg);
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #ccc;
+  }
+
+  &__nav-btn {
+    width: 474px;
+    height: 96px;
+    background-color: var(--color-main);
+    opacity: 0.9;
+    font-size: 22px;
+    line-height: 25px;
+    color: #fff;
+    text-align: left;
+    padding: 0 34px;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+    &_active {
+      background-color: #fff;
+      color: #000;
+    }
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
   }
 
   &__content {
