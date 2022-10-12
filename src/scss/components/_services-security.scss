@@ -23,11 +23,29 @@
 
   &__summary {
     display: block;
+    position: relative;
     border-bottom: 1px solid #979797;
     padding-bottom: 24px;
   }
   &__summary::-webkit-details-marker {
     display: none;
+  }
+
+  &__details > summary::after {
+    content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      height: 18px;
+      width: 18px;
+      background-image: url("../img/details-plus.svg");
+      background-position: center;
+      background-size: center;
+      background-repeat: no-repeat;
+  }
+
+  &__details[open] > summary::after {
+    background-image: url("../img/details-minus.svg");
   }
 
   &__content {
@@ -36,12 +54,17 @@
     padding-bottom: 10px;
   }
 
-  &__description {
-    margin-bottom: 15px;
+  &__img {
+    max-width: 318px;
+    object-fit: contain;
   }
 
   &__text {
     padding: 12px 19px;
+
+  }
+  &__description {
+    margin-bottom: 15px;
   }
 
   &__btn {
@@ -50,9 +73,6 @@
     text-align: left;
     line-height: 100%;
   }
-
-  // DEBUG
-  // background-color: darksalmon;
 }
 
 .security {
