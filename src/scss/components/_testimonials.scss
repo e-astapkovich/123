@@ -5,10 +5,13 @@
 
   &__title {
     color: #fff;
+    margin-bottom: 12px;
   }
 
-  &__description {
+  &__subtitle {
     color: #fff;
+    text-transform: none;
+    margin-bottom: 92px;
   }
 
   &__value {
@@ -16,10 +19,18 @@
     font-size: 64px;
     line-height: 73px;
     color: #fff;
+    margin: 0;
+  }
+
+  &__button-box {
+    padding-top: 58px;
   }
 
   &__btn {
     background-color: transparent;
+    color: #fff;
+    font-size: 28px;
+    line-height: 32px;
     color: #fff;
   }
 
@@ -39,5 +50,6 @@
     font-size: 28px;
     line-height: 32px;
     text-transform: none;
+    color: #fff;
   }
 }
