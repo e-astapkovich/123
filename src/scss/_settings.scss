@@ -113,3 +113,8 @@ body {
 .text-transform-none {
 	text-transform: none;
 }
+
+.wrapper-relative {
+	// Для секций, содержащих контейнер, но в которых есть элементы position absolute
+	position: relative;
+}
