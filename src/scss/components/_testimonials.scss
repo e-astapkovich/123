@@ -1,0 +1,43 @@
+.testimonials {
+  position: relative;
+  padding: 148px 0;
+  background-color: var(--color-main);
+
+  &__title {
+    color: #fff;
+  }
+
+  &__description {
+    color: #fff;
+  }
+
+  &__value {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 73px;
+    color: #fff;
+  }
+
+  &__btn {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 734px;
+    padding: 75px 60px;
+    background-color: #fff;
+
+  }
+}
+
+.value {
+  &__description {
+    font-size: 28px;
+    line-height: 32px;
+    text-transform: none;
+  }
+}
