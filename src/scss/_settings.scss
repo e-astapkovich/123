@@ -37,6 +37,11 @@ body {
 	background: #fff;
 }
 
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	max-width: var(--container-width);
 	margin: 0 auto;
@@ -91,7 +96,6 @@ body {
 	}
 }
 
-// TODO Кажется .subtitle дублирует .title-h3
 .subtitle {
 	font-weight: 400;
 	font-size: 24px;
