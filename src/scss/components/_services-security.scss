@@ -1,21 +1,9 @@
 .services-security {
   padding-top: 130px;
   padding-bottom: 161px;
-
-  &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: calc(var(--column-margin) - (var(--container-padding)/2));
-
-    // DEBUG
-    // height: 300px;
-    // background-color: skyblue;
-  }
 }
 
 .services {
-  flex-grow: 1;
-
   &__details {
     padding-top: 21px;
     padding-right: 34px;
@@ -77,8 +65,6 @@
 }
 
 .security {
-  flex: 0 0 var(--right-column-width);
-
   &__img {
     max-height: 323px;
     object-fit: cover;

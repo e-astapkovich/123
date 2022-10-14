@@ -123,3 +123,21 @@ blockquote {
 	// Для секций, содержащих контейнер, но в которых есть элементы position absolute
 	position: relative;
 }
+
+.wrapper-flexbox {
+	// Для секций, содержащих контейнер, но которые должны быть флексбокс
+	display: flex
+}
+
+.two-columns {
+	justify-content: space-between;
+	gap: calc(var(--column-margin) - (var(--container-padding)/2));
+
+	&__fixed-column {
+		flex: 0 0 var(--right-column-width);
+	}
+
+	&__responsive-column {
+		flex-grow: 1;
+	}
+}
