@@ -1,6 +1,6 @@
 .testimonials {
   position: relative;
-  padding: 148px 0;
+  padding: 148px 0 139px;
   background-color: var(--color-main);
 
   &__title {
@@ -51,5 +51,23 @@
     line-height: 32px;
     text-transform: none;
     color: #fff;
+  }
+}
+
+.testimonials-content {
+  &__title {
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: none;
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    margin-bottom: 54px;
+  }
+
+  &__author {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
