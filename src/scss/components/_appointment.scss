@@ -1,0 +1,23 @@
+.appointment {
+  padding-top: 179px;
+
+  &__article {
+    margin-bottom: 29px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 28px;
+  }
+
+  &__list {
+    margin-bottom: 25px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
