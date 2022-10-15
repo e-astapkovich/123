@@ -23,7 +23,16 @@
           <a href="#" class="btn-link">read more</a>
         </article>
       </div>
-      <div class="appointment__form two-columns__fixed-column"></div>
+      <form class="appointment__form appo-form two-columns__fixed-column">
+        <h2 class="title appo-form__title">appointment form</h2>
+        <input class="appo-form__input" type="text" name="first-name" id="first-name" placeholder="First Name*">
+        <input class="appo-form__input" type="text" name="last-name" id="last-name" placeholder="Last Name*">
+        <input class="appo-form__input" type="email" name="email" id="email" placeholder="Email Address*">
+        <input class="appo-form__input" type="text" name="company" id="company" placeholder="Company">
+        <div class="appo-form__buttons">
+          <input type="submit" value="send" class="btn-reset btn btn-colored appo-form__button">
+        </div>
+      </form>
     </div>
   </div>
 </div>
