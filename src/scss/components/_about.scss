@@ -54,20 +54,6 @@
       background-image: url('../img/icon-connect.svg');
     }
   }
-
-  &__link {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 29px;
-    color: var(--color-grey);
-    text-transform: uppercase;
-
-    &:hover {
-      // border-bottom: 1px solid currentColor;
-      text-decoration: underline;
-    }
-  }
 }
 
 .reason {

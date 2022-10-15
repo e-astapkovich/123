@@ -72,6 +72,19 @@ blockquote {
 	color: #fff;
 }
 
+.btn-link {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 29px;
+	color: var(--color-grey);
+	text-transform: uppercase;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
 .title {
 	font-style: normal;
 	font-weight: 700;
