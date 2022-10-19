@@ -69,6 +69,25 @@
     padding-left: 60px;
   }
 
+  &__icon-box {
+    padding-top: 8px;
+  }
+
+  &__icon {
+    fill: #fff;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__copyright {
+    background-color: #363636;
+    padding: 42px 0 37px;
+  }
+
   &__column {
     flex: 1 0 380px;
   }
@@ -76,5 +95,4 @@
   &__column:last-child {
     max-width: 380px;
   }
-
 }
