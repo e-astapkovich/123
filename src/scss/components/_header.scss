@@ -14,14 +14,14 @@
     }
   }
 
+  &__social-link:not(:last-child) {
+    margin-right: 18px;
+  }
+
   &_svg {
     fill: #fff;
     width: 16px;
     height: 16px;
-
-    &:not(:last-child) {
-      margin-right: 18px;
-    }
   }
 
   &_email {
@@ -36,6 +36,11 @@
     background: #fff;
     height: 119px;
     position: relative;
+  }
+
+  &__link,
+  &-contacts {
+    z-index: 3;
   }
 
   &__logo {
