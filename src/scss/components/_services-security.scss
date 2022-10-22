@@ -16,7 +16,7 @@
     border-bottom: 1px solid #979797;
     padding-bottom: 24px;
 
-    &:focus {
+    &:focus-visible {
       outline: 2px solid var(--color-main);
     }
 
