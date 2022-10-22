@@ -32,6 +32,14 @@
     font-size: 28px;
     line-height: 32px;
     color: #fff;
+
+    &:focus {
+      outline: 2px solid #000;
+    }
+
+    &:hover {
+      color: #000;
+    }
   }
 
   &__content {

@@ -1,32 +1,54 @@
 .header {
   &__top {
-    display: flex;
-    align-items: center;
     background: var(--color-main);
-    height: 40px;
 
-    &_content {
+    &-content {
       display: flex;
       width: 100%;
       justify-content: space-between;
       align-items: center;
       text-align: center;
+      height: 40px;
     }
   }
 
-  &__social-link:not(:last-child) {
-    margin-right: 18px;
+  &__social-link {
+    display: inline-block;
+    height: 16px;
+
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+
+    &:focus {
+      outline: 1px solid #fff;
+    }
+
+    &:hover .header__svg{
+      transform: scale(115%);
+    }
   }
 
-  &_svg {
+  &__svg {
     fill: #fff;
     width: 16px;
     height: 16px;
+    transition: transform 0.1s ease-in-out;
   }
 
-  &_email {
+  &__email {
     font-size: 12px;
     line-height: 14px;
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: 1px solid #fff;
+    }
   }
 
   &__bottom {
@@ -43,6 +65,12 @@
     z-index: 3;
   }
 
+  &__link{
+    &:focus {
+      outline: 2px solid var(--color-main);
+    }
+  }
+
   &__logo {
     width: 75px;
     height: 75px;
@@ -53,9 +81,6 @@
   position: absolute;
   left: 0;
   width: 100%;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
 
   &__list {
@@ -63,15 +88,26 @@
     margin-left: -11px;
   }
 
-  &__item {
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    display: inline-block;
     text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 16px;
 
-    &:not(:last-child) {
-      margin-right: 20px;
+    &_active {
+      font-weight: 700;
     }
 
-    &_active {
+    &:focus {
+      outline: 2px solid var(--color-main);
+    }
+
+    &:hover {
       font-weight: 700;
     }
   }
@@ -84,6 +120,10 @@
     flex-direction: column;
     padding-left: 35px;
     padding-bottom: 4px;
+
+    &:focus {
+      outline: 2px solid var(--color-main);
+    }
 
     &_phone {
 
