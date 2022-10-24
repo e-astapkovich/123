@@ -125,13 +125,13 @@ const svgToSprite = () => {
 
 // Сжатие изображений
 const imgCompress = () => {
-  return src(`${paths.srcImgFolder}*.{jpg, jpeg, png}`)
+  return src(`${paths.srcImgFolder}/*.{jpg, jpeg, png}`)
     .pipe(tinypng({
       key: 'GkvR94BWvvGD9tc4WP0zHM64P1fdDlJb',
       parallel: true,
       parallelMax: 50
     }))
-    .pipe(dest(paths.buildImgFolder))
+    .pipe(dest(paths.buildImgFolder));
 }
 
 // Конвертация шрифтов из TTF в WOFF и WOFF2
@@ -208,7 +208,7 @@ exports.default = series(delDirDist, parallel(htmlInclude, fontsConvert, imgToAp
 // exports.default = series(delDirDist, htmlInclude, fontsConvert, imgToApp, svgToApp, svgToSprite, fontsWoffMove, fontStyle, styles, watchFiles);
 
 // без map-файлов, картинки сжимаются Tinypng
-exports.build = series(delDirDist, parallel(htmlInclude, fontsConvert, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild, imgCompress);
+exports.build = series(delDirDist, parallel(htmlInclude, fontsConvert, imgCompress, svgToApp, svgToSprite), fontsWoffMove, fontStyle, stylesBuild);
 // exports.build = series(delDirDist, htmlInclude, fontsConvert, svgToApp, svgToSprite, fontsWoffMove, fontStyle, stylesBuild, imgCompress);
 
 // TODO минифицированная версия
