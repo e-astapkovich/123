@@ -4,4 +4,6 @@
 - scss
 - БЭМ
 
+Без адаптива.
+
 [Используемый макет Figma](https://www.figma.com/file/MEKCmlgypP6jUGlObpzLGG/Medical)
